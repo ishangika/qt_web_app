@@ -12,7 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div id="container-fluid">
 	<div class="col-md-12 col-sm-12 nopadding">
 		<div class="profile_pic">
-		<img class="img-responsive" src="/qt-web-app-master/application_resources/images/profile_pic.png">
+		<img class="img-responsive" src="/qt_web_app/application_resources/images/profile_pic.png">
 		</div>
 	</div>
 </div>

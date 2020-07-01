@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body scroll="no" style="overflow: hidden">
 
 <div class="imgcontainer">
-    <img class="img-responsive" src="/qt-web-app-master/application_resources/images/logo.png">
+    <img class="img-responsive" src="/qt_web_app/application_resources/images/logo.png">
 </div>
 <div class="form_tab">
 	<div class="row">

@@ -16,7 +16,7 @@
 									<div class="row">
 										<div class="col-md-2 col-sm-2">
 											<div class="profile_pic">
-												<img class="img-responsive" src="/qt-web-app-master/application_resources/images/profile_pic.png">
+												<img class="img-responsive" src="/qt_web_app/application_resources/images/profile_pic.png">
 											</div>
 										</div>
 										<div class="col-md-7 col-sm-7">
@@ -32,14 +32,14 @@
 										<p>Probably a trip to Thailand. Love the food and laid back atmosphere. I was there for a shortwhile when I was touring South East Asia. If I could name a place there, it'd be probably Koh Samui</p>
 									</div>
 									<div class="com_img">
-										<img class="img-responsive" src="/qt-web-app-master/application_resources/images/Prof-wc-bef.png">
+										<img class="img-responsive" src="/qt_web_app/application_resources/images/Prof-wc-bef.png">
 									</div>
 								</div>
 								<div class="comments_box">
 									<div class="row">
 										<div class="col-md-2 col-sm-2">
 											<div class="profile_pic">
-												<img class="img-responsive" src="/qt-web-app-master/application_resources/images/profile_pic.png">
+												<img class="img-responsive" src="/qt_web_app/application_resources/images/profile_pic.png">
 											</div>
 										</div>
 										<div class="col-md-7 col-sm-7">
@@ -55,7 +55,7 @@
 										<p>Well here's mine. Does it look like a stock photo? May be it is! ;) nahhh just kidding.</p>
 									</div>
 									<div class="com_img">
-										<img class="img-responsive" src="/qt-web-app-master/application_resources/images/Prof-wc-bef1.png">
+										<img class="img-responsive" src="/qt_web_app/application_resources/images/Prof-wc-bef1.png">
 									</div>
 								</div>
 							</div>
@@ -65,7 +65,7 @@
 								<div class="row">
 									<div class="col-md-2 col-sm-2">
 										<div class="profile_pic">
-											<img class="img-responsive" src="/qt-web-app-master/application_resources/images/profile_pic.png">
+											<img class="img-responsive" src="/qt_web_app/application_resources/images/profile_pic.png">
 										</div>
 									</div>
 									<div class="col-md-7 col-sm-7">
@@ -87,7 +87,7 @@
 								<div class="row">
 									<div class="col-md-2 col-sm-2">
 										<div class="profile_pic">
-											<img class="img-responsive" src="/qt-web-app-master/application_resources/images/profile_pic.png">
+											<img class="img-responsive" src="/qt_web_app/application_resources/images/profile_pic.png">
 										</div>
 									</div>
 									<div class="col-md-7 col-sm-7">
@@ -107,7 +107,7 @@
 								<div class="row">
 									<div class="col-md-2 col-sm-2">
 										<div class="profile_pic">
-											<img class="img-responsive" src="/qt-web-app-master/application_resources/images/profile_pic.png">
+											<img class="img-responsive" src="/qt_web_app/application_resources/images/profile_pic.png">
 										</div>
 									</div>
 									<div class="col-md-7 col-sm-7">
@@ -125,7 +125,7 @@
 								<div class="row">
 									<div class="col-md-2 col-sm-2">
 										<div class="profile_pic">
-											<img class="img-responsive" src="/qt-web-app-master/application_resources/images/profile_pic.png">
+											<img class="img-responsive" src="/qt_web_app/application_resources/images/profile_pic.png">
 										</div>
 									</div>
 									<div class="col-md-7 col-sm-7">
