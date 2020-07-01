@@ -1,2 +1,2 @@
-# qt_web_app
-new
+# qt-web-app
+Web application for QT
