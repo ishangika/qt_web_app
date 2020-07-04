@@ -16,6 +16,12 @@ p{
     color: #0f315b !important;
 }
 
+.h2, h2 {
+    font-size: 90px !important;
+    font-weight: 700 !important;
+    color: #0f315b !important;
+}
+
 .dot {
   height: 1250px;
   width: 1250px;
