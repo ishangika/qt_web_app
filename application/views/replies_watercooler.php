@@ -8,10 +8,11 @@
 										<div class="col-md-2 col-sm-2">
 											<div class="profile_pic">
 												<img class="img-responsive" src="<?php echo base_url();?>/application_resources/images/profile_pic.png">
+												<!-- <img class="img-responsive" src="<?php echo base_url();?>/application_resources/images/<?php echo $reply->profile_pic?>"> -->
 											</div>
 										</div>
 										<div class="col-md-7 col-sm-7">
-											<h3><?php echo $reply->user_name ;?></h3>
+											<h3><?php echo $reply->name ;?></h3>
 											<div class="pub_date"><?php echo date('d M', strtotime($reply->modified_datetime));?></div>
 										</div>
 										<div class="col-md-3 col-sm-3 department"><p><?php echo $reply->department;?></p></div>

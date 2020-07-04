@@ -39,6 +39,7 @@ class Login extends CI_Controller {
                 $this->session->set_userdata('USER_ID', $login->id);
                 $this->session->set_userdata('USER_GROUP_ID', $login->user_group_id);
                 $this->session->set_userdata('NAME', $login->name);
+                $this->session->set_userdata('NAME', $login->user_name);
                 $this->session->set_userdata('DESIGNATION', $login->designation); 
                 $this->session->set_userdata('DEPARTMENT', $login->department);
                 $this->session->set_userdata('DEPARTMENT_ID', $login->department_id);

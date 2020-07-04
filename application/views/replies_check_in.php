@@ -11,7 +11,7 @@
 										</div>
 									</div>
 									<div class="col-md-7 col-sm-7">
-										<h3><?php echo $reply->user_name ;?></h3>
+										<h3><?php echo $reply->name ;?></h3>
 										<div class="pub_date"><?php echo date('d M', strtotime($reply->modified_datetime));?></div>
 									</div>
 									<div class="col-md-3 col-sm-3 department"><p><?php echo $reply->department;?></p></div>
