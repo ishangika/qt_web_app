@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+	<title>Profile</title>
 	<?php include 'template/template.php';?>
 </head>
 <body>
@@ -12,15 +12,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div id="container-fluid">
 	<div class="col-md-12 col-sm-12 nopadding">
 		<div class="profile_pic">
-		<img class="img-responsive" src="/qt_web_app/application_resources/images/profile_pic.png">
+		<img class="img-responsive" src="<?php echo base_url()?>application_resources/images/profile_pic.png">
 		</div>
 	</div>
 </div>
 <div class="container-fluid">
 	<div class="col-md-12 col-sm-12 profile_details">
 		<div class="row">
-			<div class="col-md-9 col-sm-9 name">Belinda Lee</div>
-			<div class="col-md-3 col-sm-3 department"><p>Marketing</p></div>
+			<div class="col-md-9 col-sm-9 name"><?php echo $user_detail->user_name;?></div>
+			<div class="col-md-3 col-sm-3 department"><p><?php echo $user_detail->department;?></p></div>
 		</div>
 		
 		<div class="location">
@@ -29,7 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		<div class="b_day">
 			<i class="fa fa-birthday-cake" aria-hidden="true"></i>
-			20 May
+			<?php echo date('d M', strtotime($user_detail->dob));?>
 		</div>
 		<div class="row note_icon">
 			<div class="container">
