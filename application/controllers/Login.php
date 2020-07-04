@@ -50,7 +50,10 @@ class Login extends CI_Controller {
                 $this->session->set_userdata('USER_LOGGED_IN', 'TRUE');
 
                  redirect(base_url().'index.php/login/profile/'.$login->id, 'refresh');
-		}
+		}else{
+            $this->session->set_flashdata('msg', 'Please Insert valid Email and Password');
+            redirect(base_url().'index.php/login/');
+        }
 
 	}
 
@@ -58,7 +61,7 @@ class Login extends CI_Controller {
     {
     	$this->session->set_userdata('USER_LOGGED_IN', FALSE);
         $this->session->sess_destroy();
-        $this->index();
+        redirect(base_url().'index.php/login/');
     }
 
 	public function profile($id)
