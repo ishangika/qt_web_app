@@ -36,16 +36,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="row">
 					<div class="tab">
 						<div class="col-md-3 col-sm-3">
-							<button class="tablinks" onclick="openNote(event, 'Replies')"><i class="fa fa-users" aria-hidden="true"></i><br/>Replies</button>
+							<button class="tablinks" onclick="openreplies_tab()"><i class="fa fa-users" aria-hidden="true"></i><br/>Replies</button>
 						</div>
 						<div class="col-md-3 col-sm-3">
-							<button class="tablinks" onclick="openNote(event, 'Mentions')"><i class="fa fa-at" aria-hidden="true"></i><br/>Mentions</button>
+							<button class="tablinks" onclick="openmentions()"><i class="fa fa-at" aria-hidden="true"></i><br/>Mentions</button>
 						</div>
 						<div class="col-md-3 col-sm-3">
-							<button class="tablinks" onclick="openNote(event, 'Notifications')"><i class="fa fa-bell-o" aria-hidden="true"></i><br/>Notifications</button>
+							<button class="tablinks" onclick="opennotifications()"><i class="fa fa-bell-o" aria-hidden="true"></i><br/>Notifications</button>
 						</div>
 						<div class="col-md-3 col-sm-3">
-							<button class="tablinks" onclick="openNote(event, 'Status')"><i class="fa fa-list" aria-hidden="true"></i><br/>Status</button>
+							<button class="tablinks" onclick="openstatus_tab()"><i class="fa fa-list" aria-hidden="true"></i><br/>Status</button>
 						</div>
 					</div>
 				</div>
@@ -56,17 +56,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="container">
 	<div class="row">
 		<!-- Tab content -->
-		<div class="box1">
-			<?php include 'template/replies.php';?>
+		<div id="box1">
+			<?php //include 'template/replies.php';?>
 		</div>
 		<div class="box2">
-			<?php include 'template/mentions.php';?>
+			<?php //include 'template/mentions.php';?>
 		</div>
 		<div class="box3">
-			<?php include 'template/notifications.php';?>
+			<?php// include 'template/notifications.php';?>
 		</div>
-		<div class="box4">
-			<?php include 'template/status.php';?>
+		<div id="box4">
+			<?php //include 'template/status.php';?>
 		</div>
 	</div>
 </div>
@@ -75,7 +75,46 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 
+<script type="text/javascript">
 
+	function openreplies_tab(){
+
+		 $.post('<?php echo base_url();?>index.php/profile/load_replies',function(msg) {
+            $('#box4').html(msg);
+        });
+	}
+	
+	function openmentions(){
+
+		 $.post('<?php echo base_url();?>index.php/profile/load_mentions',function(msg) {
+            $('#box4').html(msg);
+        });
+	}
+
+	function opennotifications(){
+
+		 $.post('<?php echo base_url();?>index.php/profile/load_notifications',function(msg) {
+            $('#box4').html(msg);
+        });
+	}
+	
+	function openstatus_tab(){
+
+		 $.post('<?php echo base_url();?>index.php/profile/load_status',function(msg) {
+            $('#box4').html(msg);
+        });
+	}
+
+
+
+
+	// function open_check_in_replies(data){
+
+	// 	 $.post('<?php echo base_url();?>index.php/profile/get_waterpooler_replies',{question: data} ,function(msg) {
+ //            $('#Watercooler').html(msg);
+ //        });
+	// }
+</script>
 
 
 

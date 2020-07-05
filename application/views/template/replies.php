@@ -1,4 +1,4 @@
-<div id="Replies" class="tabcontent">
+<div id="Replies" class="">
 	<div class="container">
 		<div class="row">
 			<div class="tab">

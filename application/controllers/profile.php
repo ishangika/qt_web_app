@@ -16,6 +16,33 @@ class Profile extends CI_Controller {
         $this->load->helper('url');
     }
 
+public function load_replies(){ 
+
+    $this->load->view('template/replies');    
+    
+
+}
+public function load_mentions(){ 
+
+    $this->load->view('template/mentions');    
+    
+
+}
+public function load_notifications(){ 
+
+    $this->load->view('template/notifications');    
+    
+
+}
+public function load_status(){ 
+
+    $this->load->view('template/status');    
+    
+
+}
+
+
+
 public function get_waterpooler_replies(){ 
 	$user_response_service = new user_response_service();
 	$user_response_model = new user_response_model();
