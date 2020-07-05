@@ -1,6 +1,7 @@
 <div class="container">
 	<div class="row">
 		<div class="status">
+		<div class="tab">
 			<div class="col-md-6 col-sm-6">
 				<button class="tabstatus" onclick="openstatus(event, 'watercooler_status')">Watercooler</button>
 			</div>
@@ -8,7 +9,7 @@
 				<button class="tabstatus" onclick="openstatus(event, 'checkin_status')">Check- In</button>
 			</div>
 		</div>
-
+</div>
 		<div id="watercooler_status" class="tabcontentstatus">
 			
 			<div class="chat_status">
