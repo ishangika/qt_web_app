@@ -11,9 +11,9 @@
 		</div>
 </div>
 		<div id="watercooler_status" class="tabcontentstatus">
-			
+		<h3>Chat Status</h3>
 			<div class="chat_status">
-			<h3>Chat Status</h3>
+			
 				<div class="progress">
 					<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
 					<span class="sr-only">70% Complete</span>
@@ -34,8 +34,9 @@
 		</div>
 
 		<div id="checkin_status" class="tabcontentstatus">
+		<h3>Check-in Stats</h3>
 		<div class="chat_status">
-			<h3>Check-in Stats</h3>
+			
 				<div class="progress_status">
 					<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
 					<span class="sr-only">70% Complete</span>

@@ -22,6 +22,24 @@ p{
     color: #0f315b !important;
 }
 
+
+.h3, h3 {
+    font-size: 50px !important;
+    font-weight: bold !important;
+      
+}
+
+
+div#watercooler_status h3{
+    padding-top: 30px;
+    color: #0f315b !important;
+}
+
+div#checkin_status h3{
+    padding-top: 30px;
+    color: #0f315b !important;
+}
+
 .dot {
   height: 1250px;
   width: 1250px;
