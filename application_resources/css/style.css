@@ -16,10 +16,28 @@ p{
     color: #0f315b !important;
 }
 
-.h3, h3 {
+.h2, h2 {
+    font-size: 90px !important;
+    font-weight: 700 !important;
     color: #0f315b !important;
+}
+
+
+.h3, h3 {
     font-size: 50px !important;
     font-weight: bold !important;
+      
+}
+
+
+div#watercooler_status h3{
+    padding-top: 30px;
+    color: #0f315b !important;
+}
+
+div#checkin_status h3{
+    padding-top: 30px;
+    color: #0f315b !important;
 }
 
 .dot {
@@ -305,21 +323,12 @@ div#Check-in, div#Watercooler {
   }
   
   /* Style the buttons inside the tab */
-  .status button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-  }
+  
   
   /* Change background color of buttons on hover */
-  .status button:hover {
+  /* .status button:hover {
     background-color: #ddd;
-  }
+  } */
   
   /* Create an active/current tablink class */
   .status button.active {

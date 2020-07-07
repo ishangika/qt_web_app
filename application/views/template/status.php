@@ -1,6 +1,7 @@
 <div class="container">
 	<div class="row">
 		<div class="status">
+		<div class="tab">
 			<div class="col-md-6 col-sm-6">
 				<button class="tabstatus" onclick="openstatus(event, 'watercooler_status')">Watercooler</button>
 			</div>
@@ -8,11 +9,11 @@
 				<button class="tabstatus" onclick="openstatus(event, 'checkin_status')">Check- In</button>
 			</div>
 		</div>
-
+</div>
 		<div id="watercooler_status" class="tabcontentstatus">
-			
+		<h3>Chat Status</h3>
 			<div class="chat_status">
-			<h3>Chat Status</h3>
+			
 				<div class="progress">
 					<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
 					<span class="sr-only">70% Complete</span>
@@ -33,9 +34,10 @@
 		</div>
 
 		<div id="checkin_status" class="tabcontentstatus">
+		<h3>Check-in Stats</h3>
 		<div class="chat_status">
-			<h3>Check-in Stats</h3>
-				<div class="progress_status">
+			
+				<div class="progress">
 					<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
 					<span class="sr-only">70% Complete</span>
 					</div>

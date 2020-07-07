@@ -8,9 +8,10 @@
 				<div class="col-md-6 col-sm-6">
 					<button class="tablinks" onclick="open_check_in_replies('2')">Check-in</button>
 				</div>
-				<div id="Watercooler" class="">
-				</div>
+				
 			</div>
+			<div id="Watercooler" class="">
+				</div>
 		</div>
 	</div>
 </div>
