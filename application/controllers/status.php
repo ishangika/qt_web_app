@@ -16,10 +16,5 @@ class Status extends CI_Controller {
         $this->load->helper('url');
     }
 
-public function index(){ 
 
-    $this->load->view('template/status');    
-    
-
-}
 }

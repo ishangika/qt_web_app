@@ -56,7 +56,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="container">
 	<div class="row">
 		<!-- Tab content -->
-		<div id="box1">
+		<!-- <div id="box1">
 			<?php //include 'template/replies.php';?>
 		</div>
 		<div class="box2">
@@ -64,7 +64,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		<div class="box3">
 			<?php// include 'template/notifications.php';?>
-		</div>
+		</div> -->
 		<div id="box4">
 			<?php //include 'template/status.php';?>
 		</div>
