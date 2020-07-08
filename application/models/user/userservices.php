@@ -26,4 +26,28 @@ class Userservices extends CI_Model
         $query = $this->db->get();
         return $query->row();   
     }
+
+    public function delete_old_image($id){
+        $data = array( 
+        'delete_index' => '1'
+        );
+    $this->db->where('user_id', $id);
+    $this->db->update('user_profile', $data);
+    }
+
+    public function save_user_image($image,$id){
+      $data = array(
+            'user_id' => $id,
+            'profile_pic' => $image,
+            'delete_index' => 0
+        );
+
+        return $this->db->insert('user_profile', $data);
+    }
+
+    public function update_user_details($user_details,$id){
+
+    $this->db->where('id', $id);
+    $this->db->update('user', $user_details);
+    }
 }

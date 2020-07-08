@@ -76,4 +76,72 @@ class Login extends CI_Controller {
     	$this->load->view('profile',$data);
     }
 
+    public function edit_profile($user_id){
+        $usermodel = new usermodel();
+        $userservices = new userservices();
+
+        $usermodel->setId($user_id);
+        $data['user_detail'] = $userservices->get_user_details_by_id($usermodel);
+        $this->load->view('edit_profile',$data);
+    }
+
+    public function do_upload(){
+
+        $config['upload_path']          = './application_resources/uploads/user_profiles';
+        $config['allowed_types']        = 'gif|jpg|png';
+        $config['max_size']             = 2000;
+        $config['max_width']            = 1024;
+        $config['max_height']           = 768;
+
+        $this->load->library('upload', $config);
+
+        if ( ! $this->upload->do_upload('image')){
+            $error = array('error' => $this->upload->display_errors());
+            var_dump($error);
+            }else{
+            $data = array('upload_data' => $this->upload->data());
+
+            $userservices = new userservices();
+                $userservices->delete_old_image($this->input->post('id'));
+                $userservices->save_user_image($data['upload_data']['file_name'], $this->input->post('id'));
+            }
+
+
+            $user_details = array(
+              'name' => $this->input->post('name'),
+              'designation' => $this->input->post('designation'),
+              'department' => $this->input->post('department'),
+              'user_name' => $this->input->post('user_name'),
+              'dob' => $this->input->post('dob'),
+              'email' => $this->input->post('email'),
+            );
+            $userservices->update_user_details($user_details, $this->input->post('id'));
+        }
+
+    public function resizeImage($filename)
+   {
+
+      $source_path = 'application_resources/uploads/user_profiles' . $filename;
+      $target_path = 'application_resources/uploads/user_profiles/thumbnail/';
+      $config_manip = array(
+          'image_library' => 'gd2',
+          'source_image' => $source_path,
+          'new_image' => $target_path,
+          'maintain_ratio' => TRUE,
+          'create_thumb' => TRUE,
+          'thumb_marker' => '_thumb',
+          'width' => 50,
+          'height' => 50
+      );
+
+
+      $this->load->library('image_lib', $config_manip);
+      if (!$this->image_lib->resize()) {
+          echo $this->image_lib->display_errors();
+      }
+
+
+      $this->image_lib->clear();
+   }    
+
 }
