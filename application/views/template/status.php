@@ -6,30 +6,12 @@
 				<button class="tabstatus" onclick="get_watercooler_status_by_profile('1')">Watercooler</button>
 			</div>
 			<div class="col-md-6 col-sm-6">
-				<button class="tabstatus" onclick="get_checkin_status_by_profile('2')">Check- In</button>
+				<button class="tabstatus" onclick="get_watercooler_status_by_profile('2')">Check- In</button>
 			</div>
 		</div>
 </div>
-		<div id="watercooler_status" class="tabcontentstatus">
-		<h3>Chat Status</h3>
-			<div class="chat_status">
-			
-				<div class="progress">
-					<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-					<span class="sr-only">70% Complete</span>
-					</div>
-				</div>
-				<ul>
-					<li>Responded 8/8</li>
-					<li>Activity level Cheetah</li>
-				</ul>
-			</div>
-			
-			<h3>Pending Watercooler Replies</h3>
-			<div class="chat_status">
-			<div class="status_wc">Hurray! you've responded to all tasks. Good job!</div>
-
-			</div>
+		<div id="watercooler_status" class="">
+		
 
 		</div>
 
@@ -78,16 +60,8 @@ function openstatus(evt, statusName) {
 	
 	function get_watercooler_status_by_profile(data){
 
-		 $.post('<?php echo base_url();?>index.php/profile/get_waterpooler_status',{question: data} ,function(msg) {
-            $('#Watercooler-status').html(msg);
-        });
-	}
-
-
-	function open_check_in_replies(data){
-
-		 $.post('<?php echo base_url();?>index.php/profile/get_waterpooler_status',{question: data} ,function(msg) {
-            $('#Watercooler-status').html(msg);
+		 $.post('<?php echo base_url();?>index.php/profile/get_watercooler_status_by_profile',{question: data} ,function(msg) {
+            $('#watercooler_status').html(msg);
         });
 	}
 
