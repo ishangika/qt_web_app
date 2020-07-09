@@ -46,6 +46,7 @@ echo form_open_multipart('login/do_upload', $attributes);
     </div>
     <div class="form-group">
     Date Of Birth : <input type="text" name="dob" class="form-control" value="<?php echo $user_detail->dob;?>">
+    
     </div>
                 </div>
                  
