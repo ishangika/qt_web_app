@@ -25,5 +25,19 @@
 
 			</div>
 			<?php }else{ ?>
-				<h3>Pending Watercooler Replies</h3>
+				<h3>Pending Watercooler Replies <span onclick="get_pending_questions('1')"><?php echo $pending_questions_count->pending_count;?></span></h3>
+				<div id="pending-watercooler-questions"></div>
+
+
 			<?php } ?>
+
+	<script type="text/javascript">
+		function get_pending_questions(data){
+
+		$.post('<?php echo base_url();?>index.php/profile/get_pending_questions',{question: data} ,function(msg) {
+            $('#pending-watercooler-questions').html(msg);
+        });
+
+		}
+
+	</script>

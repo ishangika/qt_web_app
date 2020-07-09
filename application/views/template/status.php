@@ -16,30 +16,13 @@
 		</div>
 
 		<div id="checkin_status" class="tabcontentstatus">
-		<h3>Check-in Stats</h3>
-		<div class="chat_status">
-			
-				<div class="progress">
-					<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-					<span class="sr-only">70% Complete</span>
-					</div>
-				</div>
-				<ul>
-					<li>Check-ins 22/22</li>
-					<li>Compliance 100%</li>
-				</ul>
-			</div>
-			
-			<h3>Yet to Check-In</h3>
-			<div class="chat_status">
-			<div class="status_wc">Yes! all check-in's done.  Keep it up!</div>
-
-			</div>
+		
 		</div>
 
 
 
 <script>
+	
 function openstatus(evt, statusName) {
   var i, tabcontentstatus, tabstatus;
   tabcontentstatus = document.getElementsByClassName("tabcontentstatus");
@@ -54,11 +37,7 @@ function openstatus(evt, statusName) {
   status.currentTarget.className += " active";
 }
 
-
-
-
-	
-	function get_watercooler_status_by_profile(data){
+function get_watercooler_status_by_profile(data){
 
 		 $.post('<?php echo base_url();?>index.php/profile/get_watercooler_status_by_profile',{question: data} ,function(msg) {
             $('#watercooler_status').html(msg);

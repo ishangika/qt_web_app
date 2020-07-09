@@ -26,5 +26,20 @@
 
 			</div>
 			<?php }else{ ?>
-				<h3>Yet to Check-In</h3>
+				<h3>Yet to Check-In <span onclick="get_pending_questions('2')"><?php echo $pending_questions_count->pending_count;?></span></h3>
+				<div id="pending-questions"></div>
 			<?php } ?>
+			
+
+
+
+	<script type="text/javascript">
+		function get_pending_questions(data){
+
+		$.post('<?php echo base_url();?>index.php/profile/get_pending_questions',{question: data} ,function(msg) {
+            $('#pending-questions').html(msg);
+        });
+
+		}
+
+	</script>

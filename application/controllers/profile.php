@@ -63,11 +63,11 @@ public function get_waterpooler_replies(){
 
 public function get_watercooler_status_by_profile(){
     $question_invitation_services = new question_invitation_services();
-    $user_response_model = new user_response_model();
 
     $data['watercoller_invitation_count'] = $question_invitation_services->get_all_question_invitations_count_for_user($this->input->post('question'));
     $data['watercoller_respose_count'] = $question_invitation_services->get_response_count_for_user($this->input->post('question'));
     $data['pending_watercooler_questions'] = $question_invitation_services->get_pending_questions($this->input->post('question'));
+    $data['pending_questions_count'] = $question_invitation_services->pending_questions_count($this->input->post('question'));
 
     if($this->input->post('question') == 1){
     $this->load->view('status_watercoller',$data);
@@ -75,4 +75,26 @@ public function get_watercooler_status_by_profile(){
     $this->load->view('status_checkin',$data);    
     }
 }
+
+public function get_pending_questions(){
+    $question_invitation_services = new question_invitation_services();
+
+    $pending_questions = $question_invitation_services->get_pending_questions($this->input->post('question'));
+
+    $html="";
+    if(!empty($pending_questions)){
+        $i =0;
+        foreach ($pending_questions as $value) {
+            $i++;
+            $html .='<div class="chat_status">';
+            $html .= '<div class="status_wc">';
+            $html .= '<b>'.$i.'</b>'.". ".$value->title;
+            $html .= '<input type="hidden" value="'.$value->id.'>';
+            $html .='</div>';
+            $html .='</div>';
+        }
+        echo $html;
+    }
+}
+
 }
