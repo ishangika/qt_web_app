@@ -13,6 +13,7 @@ class Profile extends CI_Controller {
         $this->load->model('user_response/user_response_model');
         $this->load->model('user_response/user_response_service');
         $this->load->model('question_invitation_services');
+        $this->load->model('user_response_mention');
 
         $this->load->helper('url');
     }
@@ -97,4 +98,24 @@ public function get_pending_questions(){
     }
 }
 
+public function get_waterpooler_mentions(){
+$user_response_mention = new user_response_mention();
+
+$responses = $user_response_mention->get_all_mentions_for_user_id($this->input->post('question'));
+$html="";
+if(!empty($responses)){
+    $i =0;
+    foreach ($responses as $response) {
+       $i++;
+       $html .= '<input type="hidden" value="'.$response->instance_id.'">';
+       $html .= '<a>'.$response->title.'</a><br/>';
+       $html .= '<input type="hidden" value="'.$response->response_id.'">';
+       $html .= '<a>'.$response->response_text.'</a><br/><br/>';
+    }
+    echo $html;
+}else{
+    $html .='No Mentions Found';
+}
+
+}
 }
