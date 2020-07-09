@@ -3,10 +3,10 @@
 		<div class="status">
 		<div class="tab">
 			<div class="col-md-6 col-sm-6">
-				<button class="tabstatus" onclick="openstatus(event, 'watercooler_status')">Watercooler</button>
+				<button class="tabstatus" onclick="get_watercooler_status_by_profile('1')">Watercooler</button>
 			</div>
 			<div class="col-md-6 col-sm-6">
-				<button class="tabstatus" onclick="openstatus(event, 'checkin_status')">Check- In</button>
+				<button class="tabstatus" onclick="get_checkin_status_by_profile('2')">Check- In</button>
 			</div>
 		</div>
 </div>
@@ -71,4 +71,24 @@ function openstatus(evt, statusName) {
   document.getElementById(statusName).style.display = "block";
   status.currentTarget.className += " active";
 }
+
+
+
+
+	
+	function get_watercooler_status_by_profile(data){
+
+		 $.post('<?php echo base_url();?>index.php/profile/get_waterpooler_status',{question: data} ,function(msg) {
+            $('#Watercooler-status').html(msg);
+        });
+	}
+
+
+	function open_check_in_replies(data){
+
+		 $.post('<?php echo base_url();?>index.php/profile/get_waterpooler_status',{question: data} ,function(msg) {
+            $('#Watercooler-status').html(msg);
+        });
+	}
+
 </script>
