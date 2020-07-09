@@ -14,6 +14,7 @@ class Profile extends CI_Controller {
         $this->load->model('user_response/user_response_service');
         $this->load->model('question_invitation_services');
         $this->load->model('user_response_mention');
+        $this->load->model('notification_services');
 
         $this->load->helper('url');
     }
@@ -118,4 +119,10 @@ if(!empty($responses)){
 }
 
 }
+
+public function get_watercooler_notifications(){
+$notification_services = new notification_services();
+
+
+ }
 }
