@@ -52,7 +52,7 @@ echo form_open_multipart('login/do_upload', $attributes);
                  
 
                 <div class="form-group">
-                    <input type="file" name="image">
+                   Profile Picutre <input type="file" name="image">
                 </div>
  
 
