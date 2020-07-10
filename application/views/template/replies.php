@@ -1,3 +1,15 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?><!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Forgot Password</title>
+	<?php include 'template/template.php';?>
+
+</head>
+<body scroll="no" style="overflow: hidden">
 <div id="Replies" class="">
 	<div class="container">
 		<div class="row">
@@ -15,7 +27,7 @@
 		</div>
 	</div>
 </div>
-
+</body>
 <script type="text/javascript">
 	
 	function open_water_cooler_replies(data){
