@@ -19,5 +19,13 @@ class Notification_services extends CI_Model
         return $query->result(); 
 
 	}
+
+	public function get_comment_count($response_id){
+		$this->db->select('user_response_comment.id');
+    	$this->db->from('user_response_comment');
+    	$this->db->where('user_response_comment.user_response_id',$response_id);
+    	$query = $this->db->get(); //echo $this->db->last_query();exit;
+        return $query->num_rows(); 
+	}
     
 }

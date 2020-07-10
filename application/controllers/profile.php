@@ -132,8 +132,11 @@ $imoj_array= array();
 if(!empty($response)){
     foreach ($response as $key=>$value) {
        $imoji = $notification_services->get_imoji_count_for_response($value->response_id);
+       $comment = $notification_services->get_comment_count($value->response_id);
+
        foreach ($imoji as $key1=>$imoji) {
        $imoj_array[$imoji->title]["title"] = $value->title;
+       $imoj_array[$imoji->title]["comment"] = $comment;
        $imoj_array[$imoji->title]["imoji"][$imoji->imoji_id] = $imoji;
        }
     }
