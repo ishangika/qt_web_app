@@ -121,8 +121,25 @@ if(!empty($responses)){
 }
 
 public function get_watercooler_notifications(){
-$notification_services = new notification_services();
+$user_response_service = new user_response_service();
+$user_response_model = new user_response_model();
+$notification_services =new notification_services();
 
+$user_response_model->setQuestion_id($this->input->post('question'));
+$response = $user_response_service->get_user_replies_by_userid($user_response_model);
 
+$imoj_array= array();
+if(!empty($response)){
+    foreach ($response as $key=>$value) {
+       $imoji = $notification_services->get_imoji_count_for_response($value->response_id);
+       foreach ($imoji as $key1=>$imoji) {
+       $imoj_array[$imoji->title]["title"] = $value->title;
+       $imoj_array[$imoji->title]["imoji"][$imoji->imoji_id] = $imoji;
+       }
+    }
+    $data['imoj_array'] = $imoj_array;
+}
+
+$this->load->view('notification_list',$data);
  }
 }

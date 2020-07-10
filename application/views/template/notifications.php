@@ -37,7 +37,7 @@ function openstatus(evt, statusName) {
 function load_watercooler_notifications(data){
 
 	$.post('<?php echo base_url();?>index.php/profile/get_watercooler_notifications',{question: data} ,function(msg) {
-            $('#watercooler_status').html(msg);
+            $('#watercooler-notifications').html(msg);
         });
 	}
 
