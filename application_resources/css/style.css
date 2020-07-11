@@ -168,6 +168,8 @@ span.psw {
 
 .col-md-12.col-sm-12.nopadding {
     padding: 0px;
+    margin-top: -85px;
+    z-index: -9;
 }
 
 .col-md-12.col-sm-12.profile_details {
@@ -375,6 +377,32 @@ div#Check-in, div#Watercooler {
 }
   /* End status */
 
-  .navbar-toggle {
-    display: initial;
+  /* Menu */
+.navbar-toggle {
+    display: block !important;
+    border:none;
 }
+
+.navbar-default {
+    background-color: #f8f8f800 !important;
+    border-color: #e7e7e700 !important;
+}
+
+.navbar-collapse.collapse {
+    display: none !important;
+}
+
+.navbar-header {
+    float: right !important;
+}
+
+.navbar-toggle .icon-bar {
+    width: 40px !important;
+    height: 6px !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff !important;
+    /* border: none; */
+}
+/* Menu end */
