@@ -14,6 +14,7 @@ p{
     font-size: 110px !important;
     font-weight: 900 !important;
     color: #0f315b !important;
+    margin-bottom: 70px !important;
 }
 
 .h2, h2 {
@@ -369,4 +370,24 @@ div#Check-in, div#Watercooler {
 .status_wc{
     font-size: 42px;
 }
+
+
   /* End status */
+
+  /* start edit pro */
+
+  .edit_pro input[type=text], input[type=password]{
+      width:100%;
+  }
+  
+  .feild {
+    font-size: 23px;
+    margin-top: 13px;
+}
+
+  .edit_pro .form-group {
+    margin-bottom: 36px;
+    font-size: 30px;
+}
+  
+  /* End Edit Pro */
