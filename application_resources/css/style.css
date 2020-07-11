@@ -374,20 +374,4 @@ div#Check-in, div#Watercooler {
 
   /* End status */
 
-  /* start edit pro */
-
-  .edit_pro input[type=text], input[type=password]{
-      width:100%;
-  }
   
-  .feild {
-    font-size: 23px;
-    margin-top: 13px;
-}
-
-  .edit_pro .form-group {
-    margin-bottom: 36px;
-    font-size: 30px;
-}
-  
-  /* End Edit Pro */

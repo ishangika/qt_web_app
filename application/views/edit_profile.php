@@ -4,8 +4,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Forgot Password</title>
-	<?php include 'template/template.php';?>
+    <title>Forgot Password</title>
+    <style>
+
+    /* start edit pro */
+
+  .edit_pro input[type=text], input[type=password]{
+      width:100%;
+  }
+  
+  .feild {
+    font-size: 20px;
+    margin-top: 13px;
+}
+
+  .edit_pro .form-group {
+    margin-bottom: 36px;
+    font-size: 30px;
+}
+  
+  /* End Edit Pro */
+
+    </style>
+    <?php include 'template/template.php';?>
+    
+    
 
 </head>
 <body scroll="no" style="overflow: hidden">
