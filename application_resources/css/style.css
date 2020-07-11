@@ -216,16 +216,16 @@ span.psw {
 
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #353a50;
-  color: #fff;
-}
 
 #box1 .tab button, #box2 .tab button, #box3 .tab button, #box4 .tab button{
     margin-top: 40px;
 }
 
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #353a50;
+  color: #fff;
+}
 
 /* Create an active/current tablink class */
 .tab button.active {
@@ -268,9 +268,7 @@ span.psw {
     color: #fff !important;
 }
 
-.textbox_check {
-    margin-top: 143px;
-}
+
 
 .textbox_check li {
     font-size: 20px;
@@ -287,9 +285,9 @@ span.psw {
 }
 
 .textbox_check {
-    margin-top: 15px;
+    margin-top: 180px;
     background-color: #454f63;
-    padding: 32px;
+    padding: 21px;
     color: #fff;
     border-radius: 40px;
 }
@@ -313,7 +311,7 @@ div#Check-in, div#Watercooler {
 }
 
 .comments_box {
-    margin-top: 15px;
+    margin-top: 80px;
     background-color: #f4f4f4;
     padding: 32px;
     /*color: #fff;*/
@@ -375,8 +373,8 @@ div#Check-in, div#Watercooler {
 .status_wc{
     font-size: 42px;
 }
-
-
   /* End status */
 
-  
+  .navbar-toggle {
+    display: initial;
+}
