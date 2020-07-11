@@ -222,6 +222,11 @@ span.psw {
   color: #fff;
 }
 
+#box1 .tab button, #box2 .tab button, #box3 .tab button, #box4 .tab button{
+    margin-top: 40px;
+}
+
+
 /* Create an active/current tablink class */
 .tab button.active {
     background-color: #353a50;
