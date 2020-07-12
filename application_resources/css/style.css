@@ -14,6 +14,7 @@ p{
     font-size: 110px !important;
     font-weight: 900 !important;
     color: #0f315b !important;
+    margin-bottom: 70px !important;
 }
 
 .h2, h2 {
@@ -167,6 +168,8 @@ span.psw {
 
 .col-md-12.col-sm-12.nopadding {
     padding: 0px;
+    margin-top: -85px;
+    z-index: -9;
 }
 
 .col-md-12.col-sm-12.profile_details {
@@ -213,6 +216,11 @@ span.psw {
   transition: 0.3s;
   color: #78849e;
 
+}
+
+
+#box1 .tab button, #box2 .tab button, #box3 .tab button, #box4 .tab button{
+    margin-top: 40px;
 }
 
 /* Change background color of buttons on hover */
@@ -262,9 +270,7 @@ span.psw {
     color: #fff !important;
 }
 
-.textbox_check {
-    margin-top: 143px;
-}
+
 
 .textbox_check li {
     font-size: 20px;
@@ -281,9 +287,9 @@ span.psw {
 }
 
 .textbox_check {
-    margin-top: 15px;
+    margin-top: 180px;
     background-color: #454f63;
-    padding: 32px;
+    padding: 21px;
     color: #fff;
     border-radius: 40px;
 }
@@ -307,7 +313,7 @@ div#Check-in, div#Watercooler {
 }
 
 .comments_box {
-    margin-top: 15px;
+    margin-top: 80px;
     background-color: #f4f4f4;
     padding: 32px;
     /*color: #fff;*/
@@ -370,3 +376,53 @@ div#Check-in, div#Watercooler {
     font-size: 42px;
 }
   /* End status */
+
+  /* Menu */
+
+  .dropbtn {
+   /* background-color: #4CAF50;*/
+    background-color:transparent;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    float: right; 
+    text-align: left; 
+    min-width:160px;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    /* right: 0; */
+    background-color: #f9f9f9;
+    width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color:transparent;
+  }
+
+/* Menu end */

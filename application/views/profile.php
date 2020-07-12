@@ -6,9 +6,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<meta charset="utf-8">
 	<title>Profile</title>
 	<?php include 'template/template.php';?>
+
 </head>
 <body>
-
+ 
+<div class="dropdown">
+  <button class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+  <div class="dropdown-content">
+  <a href="#">Home</a>
+  <a href="http://localhost:8090/qt/index.php/login/edit_profile/4">Edit Profile</a>
+  <a href="http://localhost:8090/qt/index.php/forgot_password">Logout</a>
+  </div>
+</div> 
+ 
 <div id="container-fluid">
 	<div class="col-md-12 col-sm-12 nopadding">
 		<div class="profile_pic">
