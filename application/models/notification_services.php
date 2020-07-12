@@ -19,7 +19,7 @@ class Notification_services extends CI_Model
         return $query->result(); 
 
 	}
-<<<<<<< HEAD
+
 
 	public function get_comment_count($response_id){
 		$this->db->select('user_response_comment.id');
@@ -27,8 +27,7 @@ class Notification_services extends CI_Model
     	$this->db->where('user_response_comment.user_response_id',$response_id);
     	$query = $this->db->get(); //echo $this->db->last_query();exit;
         return $query->num_rows(); 
-=======
-	
+}
 	 public function get_comment_count_for_response($response_id){
     	$this->db->select('user_response_comment.id as comment_id, count(user_response_comment.id) as comment_count, user_response_comment.comment_text, question_instance.title, question_instance.id');
     	$this->db->from('user_response_comment');
@@ -38,7 +37,6 @@ class Notification_services extends CI_Model
     	$query = $this->db->get(); //echo $this->db->last_query();exit;
         return $query->result(); 
 
->>>>>>> 2051929e5ea9a1714505dc79176363214fb12b8d
 	}
     
 }

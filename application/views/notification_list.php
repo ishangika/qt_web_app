@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 if(!empty($imoj_array)){
 
@@ -15,7 +15,7 @@ if(!empty($imoj_array)){
 	 }
 }
 ?>
-=======
+
 <div class="comments_box">
 	<div class="container">
 		<div class="row">
@@ -58,4 +58,3 @@ if(!empty($imoj_array)){
 		</div>
 	</div>
 </div>
->>>>>>> 2051929e5ea9a1714505dc79176363214fb12b8d

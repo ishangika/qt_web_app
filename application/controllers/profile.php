@@ -143,17 +143,17 @@ if(!empty($response)){
     $data['imoj_array'] = $imoj_array;
 }
 
-$comment_array= array();
-if(!empty($response)){
-    foreach ($response as $key=>$value) {
-       $comment = $notification_services->get_comment_count_for_response($value->response_id);
-       foreach ($comment as $key1=>$comment) {
-       $comment_array[$comment->title]["title"] = $value->title;
-       $comment_array[$comment->title]["comment"][$comment->comment_id] = $comment;
-       }
-    }
-    $data['comment_array'] = $comment_array;
-}
+// $comment_array= array();
+// if(!empty($response)){
+//     foreach ($response as $key=>$value) {
+//        $comment = $notification_services->get_comment_count_for_response($value->response_id);
+//        foreach ($comment as $key1=>$comment) {
+//        $comment_array[$comment->title]["title"] = $value->title;
+//        $comment_array[$comment->title]["comment"][$comment->comment_id] = $comment;
+//        }
+//     }
+//     $data['comment_array'] = $comment_array;
+// }
 
 $this->load->view('notification_list',$data);
  }

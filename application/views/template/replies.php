@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title>Forgot Password</title>
-	<?php include 'template/template.php';?>
+	<?php include 'template.php';?>
 
 </head>
 <body scroll="no" style="overflow: hidden">
