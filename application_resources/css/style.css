@@ -378,41 +378,51 @@ div#Check-in, div#Watercooler {
   /* End status */
 
   /* Menu */
-.navbar-toggle {
-    display: block !important;
-    border:none;
-}
 
-.navbar-default {
-    background-color: #f8f8f800 !important;
-    border-color: #e7e7e700 !important;
-}
+  .dropbtn {
+   /* background-color: #4CAF50;*/
+    background-color:transparent;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    float: right; 
+    text-align: left; 
+    min-width:160px;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    /* right: 0; */
+    background-color: #f9f9f9;
+    width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color:transparent;
+  }
 
-.navbar-collapse.collapse {
-    display: none !important;
-}
-
-.navbar-header {
-    float: right !important;
-}
-
-.navbar-toggle .icon-bar {
-    width: 40px !important;
-    height: 6px !important;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff !important;
-    /* border: none; */
-}
-
-
-.navbar-default .navbar-toggle {
-    border-color: #ddd0 !important;
-}
-
-div#watercooler-notifications {
-    font-size: 38px;
-    line-height: 53px;
-}
 /* Menu end */
