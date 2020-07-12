@@ -405,4 +405,14 @@ div#Check-in, div#Watercooler {
     background-color: #fff !important;
     /* border: none; */
 }
+
+
+.navbar-default .navbar-toggle {
+    border-color: #ddd0 !important;
+}
+
+div#watercooler-notifications {
+    font-size: 38px;
+    line-height: 53px;
+}
 /* Menu end */

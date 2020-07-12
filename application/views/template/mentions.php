@@ -11,7 +11,7 @@
 				
 			</div>
 			<div id="Water-cooler" class="">
-				</div>
+			</div>
 		</div>
 	</div>
 </div>
